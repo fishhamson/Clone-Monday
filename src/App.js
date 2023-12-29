@@ -1,8 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+
+import { useRouters } from './routes/route';
 function App() {
   return (
     <>
-      <Routes></Routes>
+      {useRouters()}
     </>
   );
 }
