@@ -5,8 +5,8 @@ import React from 'react'
 const SignupTemplate = () => {
   return (
     <div>
-      <div className='grid grid-cols-[auto,40%]  h-screen w-screen font-sans'>
-        <div>
+      <div className='flex h-screen w-screen font-sans'>
+        <div className='flex-3'>
           <div className='flex flex-col items-center h-full'>
             <div className='flex flex-col justify-center flex-1'>
               <div>
@@ -44,7 +44,7 @@ const SignupTemplate = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center overflow-hidden" style={{ backgroundColor: 'rgb(97,97,255)' }}>
+        <div className="flex justify-center overflow-hidden flex-2" style={{ backgroundColor: 'rgb(97,97,255)' }}>
           <img className='h-100% object-cover' src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" />
         </div>
       </div>

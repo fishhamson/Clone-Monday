@@ -7,7 +7,8 @@ module.exports = {
         'sans': ['Roboto', 'sans-serif'],
       },
       flex: {
-        '2': '2 2 50%'
+        '2': '1 1 40%',
+        '3': '1 1 60%'
       },
     },
   },
