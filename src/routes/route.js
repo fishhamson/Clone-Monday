@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom"
 import { LoginPage } from "../pages/LoginPage"
 import { SignupPage } from "../pages/SignupPage"
+import { CreatePage } from "../pages/CreatePage"
 
 export const useRouters = () => {
     return useRoutes([
@@ -11,6 +12,10 @@ export const useRouters = () => {
         {
             path: "/signup",
             element: <SignupPage/>,
-        }
+        },
+        {
+            path: "/createuser",
+            element: <CreatePage/>
+        },
     ])
 }

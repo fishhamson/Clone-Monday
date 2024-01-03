@@ -6,8 +6,8 @@ const SignupTemplate = () => {
   return (
     <div>
       <div className='flex h-screen w-screen font-sans'>
-        <div className='flex-3'>
-          <div className='flex flex-col items-center h-full'>
+        <div className='flex-3  overflow-hidden'>
+          <div className='flex flex-col items-center h-full '>
             <div className='flex flex-col justify-center flex-1'>
               <div>
                 <h1 className='text-4xl font-medium text-center mb-2'>Welcome to monday.com</h1>
@@ -25,7 +25,7 @@ const SignupTemplate = () => {
                 </div>
                 <div className='mb-4'>
                   <Input className='h-10 text-base' placeholder="name@company.com" />
-                  <div></div>
+                  <div className='alert'></div>
                 </div>
                 <Button className='h-10 text-base' style={{ backgroundColor: '#0073ea', color: 'white' }}>Continue</Button>
                 <div className='mt-4 flex flex-col items-center'>
@@ -38,13 +38,13 @@ const SignupTemplate = () => {
                 </div>
               </div>
             </div>
-            <div className='mb-16 flex flex flex-wrap items-center justify-center'>
+            <div className='mb-16 flex flex-wrap items-center justify-center'>
               <h5 className='pr-1'>Already have an account?</h5>
               <a href="/login"><span style={{ color: '#1f76c2' }}>Log in</span></a>
             </div>
           </div>
         </div>
-        <div className="flex justify-center overflow-hidden flex-2" style={{ backgroundColor: 'rgb(97,97,255)' }}>
+        <div className="hidden justify-center overflow-hidden flex-2 md:flex" style={{ backgroundColor: 'rgb(97,97,255)' }}>
           <img className='h-100% object-cover' src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" />
         </div>
       </div>
