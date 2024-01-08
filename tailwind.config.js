@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Roboto', 'sans-serif'],
+        'sans': ['Poppins', 'Roboto', 'Noto Sans Hebrew', 'Noto Kufi Arabic', 'Noto Sans JP', 'sans-serif'],
       },
       flex: {
         '2': '1 1 40%',
