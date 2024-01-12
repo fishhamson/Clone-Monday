@@ -1,9 +1,8 @@
 import { useRoutes } from "react-router-dom"
 import { LoginPage } from "../pages/LoginPage"
 import { SignupPage } from "../pages/SignupPage"
-import { CreatePage } from "../pages/CreatePage"
-import { InvitationPage } from "../pages/InvitationPage"
-import { SelectPage } from "../pages/SelectPage"
+import GetInfo from "../pages/GroupGetInfo/GetInfo"
+import { LetsStartPage } from "../pages/LetsStartPage"
 
 export const useRouters = () => {
     return useRoutes([
@@ -17,15 +16,11 @@ export const useRouters = () => {
         },
         {
             path: "/createuser",
-            element: <CreatePage/>
+            element: <GetInfo/>
         },
         {
-            path: "/invitation",
-            element: <InvitationPage/>
-        },
-        {
-            path: "/select",
-            element: <SelectPage/>
+            path: "/letsstart",
+            element: <LetsStartPage/>
         }
     ])
 }

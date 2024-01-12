@@ -3,7 +3,7 @@ import { Radio, Button } from 'antd';
 import './style.scss'
 import { useFormik } from 'formik';
 
-const InvitationTemplate = () => {
+const InvitationTemplate = ({ onNext }) => {
     const formik = useFormik({
         initialValues: {
             purpose: "",
@@ -104,7 +104,7 @@ const InvitationTemplate = () => {
                         )}
                         <div className='absolute bottom-0 right-0 md:px-32 md:py-20 pr-8 py-20'>
                             <div className='flex justify-end items-end'>
-                                <Button disabled={!formik.values.role && formik.values.purpose !== 2} className='h-10 text-base flex justify-center items-center' style={!formik.values.role && formik.values.purpose !== 2 ? {} : { backgroundColor: '#0073ea', color: 'white' }}>
+                                <Button onClick={onNext} disabled={!formik.values.role && formik.values.purpose !== 2} className='h-10 text-base flex justify-center items-center' style={!formik.values.role && formik.values.purpose !== 2 ? {} : { backgroundColor: '#0073ea', color: 'white' }}>
                                     <span>Continue</span>
                                     <svg className='ml-1 mt-[2.5px]' viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true" class="icon_c85ee8f381 rightIcon_b8664810bd noFocusStyle_7a93ee2575" data-testid="icon">
                                         <path d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>

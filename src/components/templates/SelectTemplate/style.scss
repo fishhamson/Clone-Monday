@@ -1,4 +1,4 @@
-.radio_style{
+.Checkbox-style {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -9,7 +9,9 @@
     margin-top: 1rem;
     padding: 8px 16px;
     color: #676879;
-    span{
-        margin-left: 1px;
+    transition: 0.1s all;
+
+    &:active {
+        transform: scale(0.95);
     }
 }
